@@ -1,0 +1,21 @@
+snippet base "base sbt settings" b
+name := "${1:ScalaHelloWorld}"
+
+version := "0.0.1"
+
+scalaVersion := "2.10.0"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "1.9.1" % "test"
+endsnippet
+
+snippet plugin "sbt settings under project" b
+//this is for gen-idea
+
+resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
+
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.2.0-SNAPSHOT")
+
+//this is for sbt
+
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.1.2")
+endsnippet
