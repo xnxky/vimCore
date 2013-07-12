@@ -1,4 +1,5 @@
-set statusline +=%3*\ \ %{GetPerlMethodName()}%*
+let g:airline_section_a = '%{GetPerlMethodName()}'
+"set statusline +=%3*\ \ %{GetPerlMethodName()}%*
 function! GetPerlMethodName()
 
     let current = a:firstline

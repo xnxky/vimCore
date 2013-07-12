@@ -1,4 +1,5 @@
-let s:saved_statusline = &statusline
+let g:airline_section_a = '%{GetPythonMethodName()}'
+"let s:saved_statusline = &statusline
 function! GetPythonMethodName() range
 
     let current = a:firstline
@@ -27,14 +28,18 @@ function! GetIndent() range
     return indent(a:firstline)
 endfunction
 
-function! ModifyStatusline()
-    set statusline +=%3*\ \ %{GetIndent()}%* 
-    set statusline +=%3*\ \ %{GetPythonMethodName()}%*
-endfunction
-augroup addStatusLineEntry
-    autocmd!
-    autocmd BufEnter *.py :call ModifyStatusline()
-augroup deleteStatusLineEntry
-    autocmd!
-    autocmd BufLeave *.py let &statusline = s:saved_statusline
-augroup END
+"function! ModifyStatusline()
+"    set statusline +=%3*\ \ %{GetIndent()}%* 
+"    set statusline +=%3*\ \ %{GetPythonMethodName()}%*
+"endfunction
+
+"augroup addStatusLineEntry
+"    autocmd!
+"    autocmd BufEnter *.py :call ModifyStatusline()
+"augroup END
+
+"augroup deleteStatusLineEntry
+"    autocmd!
+"    autocmd BufLeave *.py let &statusline = s:saved_statusline
+"augroup END
+
