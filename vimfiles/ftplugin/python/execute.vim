@@ -7,6 +7,6 @@ py from vimpy import *
 
 command! PyExecBuffer py exec('\n'.join(current.buffer))
 noremap <silent> <leader>r :vsp temp<CR>:py redirect(current.window.buffer)<CR><C-W><C-W>
-noremap <silent> <leader>e <C-W><C-W><C-W><C-W>ggdG<C-W><C-W>:PyExecBuffer<CR>
+noremap <silent> <leader>e <C-W><C-W>ggdG<C-W><C-W>:PyExecBuffer<CR>
 "select lines and press F5 to execute
 noremap <f5> :!python<CR>
