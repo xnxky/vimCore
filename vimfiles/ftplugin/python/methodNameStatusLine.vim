@@ -1,4 +1,4 @@
-let g:airline_section_a = '%{GetPythonMethodName()}'
+let g:airline_section_a = '%{GetIndent()} %{GetPythonMethodName()}'
 "let s:saved_statusline = &statusline
 function! GetPythonMethodName() range
 

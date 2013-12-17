@@ -481,9 +481,5 @@ endif
 inoremap    <buffer>  {<CR>  {<CR>}<Esc>O
 vnoremap    <buffer>  {<CR> s{<CR>}<Esc>kp=iB
 "
-if !exists("g:Perl_Ctrl_j") || ( exists("g:Perl_Ctrl_j") && g:Perl_Ctrl_j != 'off' )
-  nmap    <buffer>  <silent>  <C-j>    i<C-R>=Perl_JumpCtrlJ()<CR>
-  imap    <buffer>  <silent>  <C-j>     <C-R>=Perl_JumpCtrlJ()<CR>
-endif
 " ----------------------------------------------------------------------------
 "
