@@ -203,7 +203,7 @@ if !hasmapto("<SID>CompileNoPrompt()")
 endif
 
 " Display a help key reminder when first loading Vim (with a Groovy file)
-au VimEnter *.groovy echo "F2 for Groovy plugin help"
+au VimEnter *.groovy echo "F1 for Groovy plugin help"
 
 " Abbreviations
 ia <buffer> cl class {<CR>}<Esc>kf{i<C-R>=<SID>RemoveSpace()<CR>
