@@ -1806,6 +1806,11 @@ endfunc
 " tcsh scripts
 au BufNewFile,BufRead .tcshrc*,*.tcsh,tcsh.tcshrc,tcsh.login	call SetFileTypeShell("tcsh")
 
+"for Groovy
+"au BufNewFile,BufRead *.groovy setf groovy
+
+
+
 " csh scripts, but might also be tcsh scripts (on some systems csh is tcsh)
 au BufNewFile,BufRead .login*,.cshrc*,csh.cshrc,csh.login,csh.logout,*.csh,.alias  call s:CSH()
 

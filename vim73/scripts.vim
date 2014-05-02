@@ -359,3 +359,10 @@ endif
 let &cpo = s:cpo_save
 
 unlet s:cpo_save s:line1
+
+if did_filetype()
+    finish
+endif
+if getline(1) =~ '^#!.*[/\\]groovy\>'
+    setf groovy
+endif 

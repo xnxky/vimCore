@@ -28,4 +28,6 @@ execute 'source '.vimConfigDir.'/syntastic.vim'
 execute 'source '.vimConfigDir.'/makegreen.vim'
 execute 'source '.vimConfigDir.'/virtualenv.vim'
 execute 'source '.vimConfigDir.'/ultisnips.vim'
+execute 'source '.vimConfigDir.'/indent.vim'
+execute 'source '.vimConfigDir.'/ctrlp.vim'
 "*************************************************************************
