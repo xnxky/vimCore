@@ -4,5 +4,5 @@ fun! s:DetectScala()
     endif
 endfun
 
-au BufRead,BufNewFile *.scala,*.sbt,*.sc set filetype=scala
+au BufRead,BufNewFile *.scala,*.sbt set filetype=scala
 au BufRead,BufNewFile * call s:DetectScala()
